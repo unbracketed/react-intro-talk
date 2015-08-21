@@ -33,14 +33,14 @@ export default class extends React.Component {
             An Introduction
           </Heading>
           <Heading size={2} fit caps textColor="black">
-            To the library and ecosystem
+            library and ecosystem
           </Heading>
         </Slide>
 
-        <Slide bgColor="black">
+        <Slide bgColor="white">
           <BlockQuote>
-            <Quote>A JAVASCRIPT LIBRARY FOR BUILDING USER INTERFACES</Quote>
-            <Cite>React home page</Cite>
+            <Quote textColor="gray">A JAVASCRIPT LIBRARY FOR BUILDING USER INTERFACES</Quote>
+            <Cite textColor="altBlue">React home page</Cite>
           </BlockQuote>
         </Slide>
 
