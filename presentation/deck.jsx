@@ -12,7 +12,9 @@ import Interactive from "./interactive";
 const images = {
   city: require("./city.jpg"),
   kat: require("./kat.png"),
-  logo: require("./formidable-logo.svg")
+  logo: require("./formidable-logo.svg"),
+
+  reactElemInConsole: require('./images/react-element-in-dev-console.png')
 };
 
 preloader([images.city, images.kat]);
@@ -44,12 +46,46 @@ export default class extends React.Component {
           </BlockQuote>
         </Slide>
 
-        <Slide transition={['slide']} bgColor="black" notes="You can even put notes on your slide. How awesome is that?">
-          <Image src="http://www.haljurcik.com/NewTest/wp-content/uploads/2013/01/San-Gabriel-Rd-lookout.jpg" margin="0px auto 40px" height="293px"/>
-          <Heading size={1} fit textColor="primary" textFont="secondary">
-            Glendora Mountain Road
-          </Heading>
+        <Slide>
+            <CodePane
+              lang="javascript"
+              source={require("raw!./examples/simple/index.html")}
+              margin="20px auto"/>
         </Slide>
+
+        <Slide>
+          index.html
+            <CodePane
+              lang="javascript"
+              source={require("raw!./examples/simple-2/index.html")}
+              margin="20px auto"/>
+            helloglendora.js
+            <CodePane
+              lang="javascript"
+              source={require("raw!./examples/simple-2/helloglendora.js.example")}
+              margin="20px auto"/>
+        </Slide>
+
+        <Slide notes="shows transpiled JSX">
+            <CodePane
+              lang="javascript"
+              source={require("raw!./examples/simple-2/helloglendora.js")}
+              margin="20px auto"/>
+        </Slide>
+
+        <Slide>
+          <Image src={images.reactElemInConsole.replace('/','')} margin="0px auto 40px"/>
+        </Slide>
+
+        <Slide>
+            <CodePane
+              lang="javascript"
+              source={require("raw!./examples/first-component/index.html")}
+              margin="20px auto"/>
+        </Slide>
+
+        <Slide>Gotcha!  class vs. className</Slide>
+
 
         <Slide>
           <ReactCountdownClock seconds={60}
