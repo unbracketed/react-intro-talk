@@ -10,14 +10,10 @@ import preloader from "../src/utils/preloader";
 import Interactive from "./interactive";
 
 const images = {
-  city: require("./city.jpg"),
-  kat: require("./kat.png"),
-  logo: require("./formidable-logo.svg"),
-
   reactElemInConsole: require('./images/react-element-in-dev-console.png')
 };
 
-preloader([images.city, images.kat]);
+// preloader([images.city, images.kat]);
 
 import Pong from 'react-pong'
 import ReactCountdownClock from 'react-countdown-clock'
