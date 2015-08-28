@@ -65,7 +65,7 @@ export default class extends React.Component {
         <Slide>
             <CodePane
               lang="javascript"
-              source={require("raw!./examples/first-component/index.html")}
+              source={require("raw!./examples/first-component/simple-component.example")}
               margin="20px auto"/>
         </Slide>
 
@@ -174,6 +174,16 @@ export default class extends React.Component {
         </Slide>
 
         <Slide>
+          <Heading>Component Lifecycle Methods</Heading>
+          <List>
+            <ListItem>async operations</ListItem>
+            <ListItem>authentication / policy checks</ListItem>
+            <ListItem>interact with other libraries</ListItem>
+            <ListItem>improve performance</ListItem>
+          </List>
+        </Slide>
+
+        <Slide>
           <Heading>Event handlers</Heading>
 
           <CodePane
@@ -235,6 +245,22 @@ export default class extends React.Component {
 
         <Slide align="center flex-start">
             <Pong/>
+        </Slide>
+
+
+        <Slide>
+          <Heading>Resources</Heading>
+          <List>
+            <ListItem>egghead.io</ListItem>
+            <ListItem>React Koans</ListItem>
+            <ListItem>Reactiflux Slack community</ListItem>
+          </List>
+        </Slide>
+
+        <Slide>
+          <Heading size={3}>Brian Luft</Heading>
+          <Heading size={3}>@unbracketed</Heading>
+          <Heading size={3}>Lincoln Loop</Heading>
         </Slide>
 
       </Deck>
