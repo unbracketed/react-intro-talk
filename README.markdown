@@ -38,7 +38,7 @@ npm install
 npm start
 ```
 
-Presentation should be available at http://localhost:3000/#/  
+Presentation should be available at http://localhost:49000/#/  
 You can override the port like: `PORT=55555 npm start`
 
 Made with [Spectacle](http://projects.formidablelabs.com/spectacle/#/) - consult project documentation for other options.
